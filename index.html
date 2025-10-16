@@ -8,29 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics (optional) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -53,173 +45,96 @@
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://www.linkedin.com/in/negar-pouya-3aa1672b2/">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+        <span class="icon"><i class="fas fa-home"></i></span>
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
+        <a class="navbar-link">More Research</a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/NgrPu" target="_blank">
-            Shayan’s GitHub
-          </a>
-          <a class="navbar-item" href="https://github.com/ArminSLM" target="_blank">
-            Armin’s GitHub
-          </a>
+          <a class="navbar-item" href="https://github.com/NgrPu" target="_blank">Shayan’s GitHub</a>
+          <a class="navbar-item" href="https://github.com/ArminSLM" target="_blank">Armin’s GitHub</a>
         </div>
       </div>
     </div>
-
   </div>
 </nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement</h1>
+          <h1 class="title is-1 publication-title">
+            FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement
+          </h1>
+
+          <!-- Authors (no superscripts) -->
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/negar-pouya-3aa1672b2/">Negar Pouya</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/armin-soleymani-b07733134/">Armin Soleymani</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.ca/citations?hl=en&user=KCgGlJYAAAAJ">Gholamreza Moradi</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.ca/citations?hl=en&user=nmZp2s8AAAAJ">Farzaneh Abdollahi</a><sup>2</sup>,
-            </span>
+            <span class="author-block"><a href="https://www.linkedin.com/in/negar-pouya-3aa1672b2/">Negar Pouya</a>,</span>
+            <span class="author-block"><a href="https://www.linkedin.com/in/armin-soleymani-b07733134/">Armin Soleymani</a>,</span>
+            <span class="author-block"><a href="https://scholar.google.ca/citations?hl=en&user=KCgGlJYAAAAJ">Gholamreza Moradi</a>,</span>
+            <span class="author-block"><a href="https://scholar.google.ca/citations?hl=en&user=nmZp2s8AAAAJ">Farzaneh Abdollahi</a></span>
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Amirkabir University of Technology (Tehran Polytechnic),</span>
+          <!-- Affiliation (plain text) -->
+          <div class="is-size-6 publication-authors" style="margin-top: .5rem;">
+            <span class="author-block">Amirkabir University of Technology (Tehran Polytechnic)</span>
           </div>
 
-          <div class="column has-text-centered">
+          <!-- Top buttons -->
+          <div class="column has-text-centered" style="margin-top: 1rem;">
             <div class="publication-links">
               <!-- PDF Paper -->
               <span class="link-block">
-                <a href="https://your-paper-link.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
+                <a href="https://your-paper-link.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
-            
+
               <!-- TechRxiv -->
               <span class="link-block">
-                <a href="https://www.techrxiv.org/your-paper-link"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-open-access"></i>
-                  </span>
+                <a href="https://www.techrxiv.org/your-paper-link" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-open-access"></i></span>
                   <span>TechRxiv</span>
                 </a>
               </span>
-            
+
               <!-- Presentation Video -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=your-presentation-video"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
+                <a href="https://www.youtube.com/watch?v=your-presentation-video" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-youtube"></i></span>
                   <span>Presentation Video</span>
                 </a>
               </span>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Single large centered teaser video (kept) -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
+      <video id="teaser" autoplay muted loop playsinline style="width:100%;max-width:980px;display:block;margin:0 auto;border-radius:12px;">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+      <h2 class="subtitle has-text-centered" style="margin-top:12px;">
+        <span class="dnerf">FiReT</span> reconstructs wireless radiation fields and optimizes transmitter placement from sparse measurements.
       </h2>
     </div>
   </div>
 </section>
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- Removed: the whole carousel/extra videos section -->
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+    <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -236,181 +151,110 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
+    <!--/ Abstract -->
   </div>
 </section>
 
-
-<section class="section">
+<!-- ===================================== -->
+<!-- 1) Model Architecture (NEW SECTION)   -->
+<!-- ===================================== -->
+<section class="section" id="model-architecture">
   <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Model Architecture</h2>
+    <div class="content has-text-justified" style="margin-bottom: 1rem;">
+      <p>We present the FiReT pipeline and its core Residual-FiLM MLP that conditions on DoA across layers to preserve angular sensitivity. Replace the images below with your actual architecture figures and adjust the captions accordingly.</p>
+    </div>
 
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+    <div class="columns is-multiline">
+      <!-- Figure 1 -->
+      <div class="column is-6">
+        <figure class="image" style="border:1px solid #222; border-radius:12px; overflow:hidden;">
+          <img src="./static/images/architecture_overview.png" alt="FiReT pipeline overview">
+        </figure>
+        <p class="has-text-grey is-size-6" style="margin-top:.5rem;">
+          <em>Figure 1:</em> FiReT pipeline overview: sparse measurements → continuous wireless field representation → transmitter ranking.
+        </p>
+        <div class="content has-text-justified">
+          <p>FiReT consumes sparse receiver measurements while sweeping candidate TX positions. The learned radiance field supports dense channel queries and enables robust coverage estimation.</p>
         </div>
       </div>
-      <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
+      <!-- Figure 2 -->
+      <div class="column is-6">
+        <figure class="image" style="border:1px solid #222; border-radius:12px; overflow:hidden;">
+          <img src="./static/images/architecture_filmlp.png" alt="Residual-FiLM MLP with DoA conditioning">
+        </figure>
+        <p class="has-text-grey is-size-6" style="margin-top:.5rem;">
+          <em>Figure 2:</em> Residual-FiLM MLP: layer-wise DoA conditioning maintains angular sensitivity and stabilizes deeper networks.
+        </p>
+        <div class="content has-text-justified">
+          <p>DoA features modulate channel activations via per-channel scale/shift, preventing directional information wash-out and improving generalization to unseen points.</p>
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
+<!-- ====================================================== -->
+<!-- 2) Channel Estimation & Transmitter Placement (NEW)    -->
+<!-- ====================================================== -->
+<section class="section" id="results">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Channel Estimation & Transmitter Placement Results</h2>
+    <div class="content has-text-justified" style="margin-bottom: 1rem;">
+      <p>We report channel estimation accuracy and transmitter ranking quality across complex indoor layouts. Replace the charts with your own figures and update the captions.</p>
+    </div>
 
+    <div class="columns is-multiline">
+      <!-- Chart 1 -->
+      <div class="column is-6">
+        <figure class="image" style="border:1px solid #222; border-radius:12px; overflow:hidden;">
+          <img src="./static/images/chart_cfr_accuracy.png" alt="CFR estimation accuracy across validation points">
+        </figure>
+        <p class="has-text-grey is-size-6" style="margin-top:.5rem;">
+          <em>Figure 3:</em> Channel estimation accuracy (e.g., NMSE / SNR gain) at unseen locations—FiReT maintains high fidelity with fewer measurements.
+        </p>
+        <div class="content has-text-justified">
+          <p>Compared to baselines, FiReT achieves higher accuracy with sparse samples, reflecting the benefit of continuous NeRF-based field modeling.</p>
+        </div>
+      </div>
+
+      <!-- Chart 2 -->
+      <div class="column is-6">
+        <figure class="image" style="border:1px solid #222; border-radius:12px; overflow:hidden;">
+          <img src="./static/images/chart_tx_ranking.png" alt="Transmitter placement ranking score">
+        </figure>
+        <p class="has-text-grey is-size-6" style="margin-top:.5rem;">
+          <em>Figure 4:</em> Transmitter placement ranking: weighted CFR + effective ray count selects placements with robust, uniform coverage.
+        </p>
+        <div class="content has-text-justified">
+          <p>FiReT’s ranking correlates with coverage quality and mitigates dead zones by balancing link strength and spatial uniformity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-   <pre><code>@inproceedings{pouya2025firet,
-    title={FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement},
-    author={Pouya, Negar and Soleymani, Armin and Moradi, Gholamreza and Abdollahi, Farzaneh},
-    booktitle={Proceedings of 16th International Conference on Information and Knowledge Technology (IKT)},
-    year={2025}
+<pre><code>@inproceedings{pouya2025firet,
+  title        = {FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement},
+  author       = {Pouya, Negar and Soleymani, Armin and Moradi, Gholamreza and Abdollahi, Farzaneh},
+  booktitle    = {Proceedings of the 16th International Conference on Information and Knowledge Technology (IKT)},
+  year         = {2025}
 }</code></pre>
   </div>
 </section>
 
-
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+      <a class="icon-link" href="./static/paper/firet_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/NgrPu" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/NgrPu" target="_blank">
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -418,16 +262,14 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Source code adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies.github.io</a>.
+            Please remove or replace the analytics code in the header if you don't need it.
           </p>
         </div>
       </div>
