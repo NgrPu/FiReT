@@ -102,17 +102,37 @@
   </div>
 </section>
 
-<!-- ABSTRACT -->
-<section class="section">
+<section class="section" id="abstract">
   <div class="container is-max-desktop">
-    <div class="has-text-centered">
-      <h2 class="title is-3">Abstract</h2>
-    </div>
-    <div class="content has-text-justified">
-      <p>We introduce <strong>FiReT</strong>, a deep learning framework designed for wireless channel estimation and transmitter placement optimization...</p>
+    <div class="column is-four-fifths is-offset-one-fifth">
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="content has-text-justified" style="margin-top: 1rem;">
+        <p>
+          We introduce <strong>FiReT</strong>, a deep learning framework designed for wireless channel estimation
+          and transmitter placement optimization. Accurately modeling channel behavior in complex indoor
+          spaces remains a critical challenge, as conventional approaches rely on exhaustive site surveys
+          that demand dense measurements and significant human effort.
+        </p>
+        <p>
+          To overcome these limitations, our method leverages recent advances in
+          <strong>Neural Radiance Fields (NeRF)</strong> to learn a continuous representation of the wireless
+          radiation field from sparse observations. In our formulation, receivers are randomly positioned
+          throughout the environment while the transmitter location is systematically varied, allowing
+          the model to explore alternative deployment scenarios.
+        </p>
+        <p>
+          This design enables the estimation of wireless channels at unseen points and facilitates the
+          identification of the globally optimal transmitter position that ensures robust coverage across
+          the entire space. Through extensive evaluation, we show that our approach maintains high
+          prediction accuracy with far fewer measurements than traditional methods, demonstrating the
+          promise of NeRF-based learning in guiding efficient and scalable transmitter deployment for
+          future wireless networks.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- PRESENTATION VIDEO -->
 <section class="section" id="presentation-video">
