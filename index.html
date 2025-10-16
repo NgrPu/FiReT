@@ -54,8 +54,8 @@
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">More Research</a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/NgrPu" target="_blank">Shayan’s GitHub</a>
-          <a class="navbar-item" href="https://github.com/ArminSLM" target="_blank">Armin’s GitHub</a>
+          <a class="navbar-item" href="https://github.com/NgrPu" target="_blank">Negars Pouya’s GitHub</a>
+          <a class="navbar-item" href="https://github.com/ArminSLM" target="_blank">Armin Soleymani’s GitHub</a>
         </div>
       </div>
     </div>
@@ -171,32 +171,26 @@
       </p>
     </div>
 
-    <!-- Vertical layout -->
     <div class="content has-text-centered">
-      <!-- Figure 1 -->
+      <!-- Architecture overview -->
       <figure style="margin-bottom: 2rem;">
         <img src="./static/images/architecture_overview.png"
              alt="FiReT pipeline overview"
              style="max-width: 80%; border:1px solid #222; border-radius:12px;">
-        <figcaption class="has-text-grey is-size-6" style="margin-top:.5rem;">
-          <em>Figure 1:</em> FiReT pipeline overview — sparse measurements → continuous wireless field representation → transmitter ranking.
-        </figcaption>
-        <p class="has-text-justified" style="max-width: 80%; margin: 0 auto;">
-          FiReT consumes sparse receiver measurements while sweeping candidate TX positions.
-          The learned radiance field supports dense channel queries and enables robust coverage estimation.
+        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
+          FiReT learns a continuous wireless radiation field from sparse receiver measurements,
+          supporting dense channel queries and transmitter ranking.
         </p>
       </figure>
 
-      <!-- Figure 2 -->
+      <!-- FiLM MLP block -->
       <figure style="margin-bottom: 2rem;">
         <img src="./static/images/architecture_filmlp.png"
              alt="Residual-FiLM MLP with DoA conditioning"
              style="max-width: 70%; border:1px solid #222; border-radius:12px;">
-        <figcaption class="has-text-grey is-size-6" style="margin-top:.5rem;">
-          <em>Figure 2:</em> Residual-FiLM MLP: layer-wise DoA conditioning maintains angular sensitivity and stabilizes deeper networks.
-        </figcaption>
-        <p class="has-text-justified" style="max-width: 80%; margin: 0 auto;">
-          DoA features modulate channel activations via per-channel scale/shift, preventing directional information wash-out and improving generalization to unseen points.
+        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
+          Residual-FiLM MLP injects DoA information across all layers via per-channel scaling and shifting
+          to preserve angular sensitivity and stabilize training.
         </p>
       </figure>
     </div>
@@ -216,37 +210,38 @@
       </p>
     </div>
 
-    <!-- Vertical layout -->
     <div class="content has-text-centered">
       <!-- Chart 1 -->
       <figure style="margin-bottom: 2rem;">
         <img src="./static/images/chart_cfr_accuracy.png"
              alt="CFR estimation accuracy across validation points"
              style="max-width: 70%; border:1px solid #222; border-radius:12px;">
-        <figcaption class="has-text-grey is-size-6" style="margin-top:.5rem;">
-          <em>Figure 3:</em> Channel estimation accuracy (e.g., NMSE / SNR gain) at unseen locations—FiReT maintains high fidelity with fewer measurements.
-        </figcaption>
-        <p class="has-text-justified" style="max-width: 80%; margin: 0 auto;">
-          Compared to baselines, FiReT achieves higher accuracy with sparse samples,
-          reflecting the benefit of continuous NeRF-based field modeling.
+        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
+          FiReT achieves higher channel estimation accuracy with sparse samples compared to NeWRF and MLP baselines,
+          reflecting effective NeRF-based field modeling.
         </p>
       </figure>
 
-      <!-- Chart 2 -->
+      <!-- Chart 2 (Table) -->
       <figure style="margin-bottom: 2rem;">
         <img src="./static/images/chart_tx_ranking.png"
-             alt="Transmitter placement ranking score"
+             alt="Transmitter placement ranking table"
              style="max-width: 75%; border:1px solid #222; border-radius:12px;">
-        <figcaption class="has-text-grey is-size-6" style="margin-top:.5rem;">
-          <em>Figure 4:</em> Transmitter placement ranking — weighted CFR + effective ray count selects placements with robust, uniform coverage.
-        </figcaption>
-        <p class="has-text-justified" style="max-width: 80%; margin: 0 auto;">
-          FiReT’s ranking correlates with coverage quality and mitigates dead zones by balancing link strength and spatial uniformity.
+        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
+          Transmitter candidate ranking in the Bedroom scene.
+          Candidates are placed on a (x, y, z) grid.
+          “Average CFR |H|” is the mean CFR magnitude over all receivers and operating frequencies (unitless).
+          “Ray Count” is the number of contributing propagation paths among all receivers after attenuation and phase screening.
+        </p>
+        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
+          FiReT’s transmitter ranking balances link strength and spatial coverage
+          using a weighted combination of CFR and ray-count metrics.
         </p>
       </figure>
     </div>
   </div>
 </section>
+
 
 <!-- BibTeX -->
 <section class="section" id="BibTeX">
