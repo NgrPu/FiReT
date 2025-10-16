@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics (optional) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,30 +18,29 @@
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <!-- link rel="stylesheet" href="./static/css/fontawesome.all.min.css"-->
+  <link rel="stylesheet" href="./static/css/index.css">
   <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--script defer src="./static/js/fontawesome.all.min.js"></script-->
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <style>
+    figcaption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+  </style>
 </head>
-<body>
 
+<body>
+<!-- NAVBAR -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
     </a>
   </div>
   <div class="navbar-menu">
@@ -50,11 +48,10 @@
       <a class="navbar-item" href="https://www.linkedin.com/in/negar-pouya-3aa1672b2/">
         <span class="icon"><i class="fas fa-home"></i></span>
       </a>
-
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">More Research</a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/NgrPu" target="_blank">Negars Pouya’s GitHub</a>
+          <a class="navbar-item" href="https://github.com/NgrPu" target="_blank">Negar Pouya’s GitHub</a>
           <a class="navbar-item" href="https://github.com/ArminSLM" target="_blank">Armin Soleymani’s GitHub</a>
         </div>
       </div>
@@ -62,188 +59,119 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
-            FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement
-          </h1>
+    <div class="container is-max-desktop has-text-centered">
+      <h1 class="title is-1 publication-title">
+        FiReT: A Neural Radiance Fields Framework for Wireless Field Reconstruction and Transmitter Placement
+      </h1>
 
-          <!-- Authors (no superscripts) -->
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="https://www.linkedin.com/in/negar-pouya-3aa1672b2/">Negar Pouya</a>,</span>
-            <span class="author-block"><a href="https://www.linkedin.com/in/armin-soleymani-b07733134/">Armin Soleymani</a>,</span>
-            <span class="author-block"><a href="https://scholar.google.ca/citations?hl=en&user=KCgGlJYAAAAJ">Gholamreza Moradi</a>,</span>
-            <span class="author-block"><a href="https://scholar.google.ca/citations?hl=en&user=nmZp2s8AAAAJ">Farzaneh Abdollahi</a></span>
-          </div>
-
-          <!-- Affiliation (plain text) -->
-          <div class="is-size-6 publication-authors" style="margin-top: .5rem;">
-            <span class="author-block">Amirkabir University of Technology (Tehran Polytechnic)</span>
-          </div>
-
-          <!-- Top buttons -->
-          <div class="column has-text-centered" style="margin-top: 1rem;">
-            <div class="publication-links">
-              <!-- PDF Paper -->
-              <span class="link-block">
-                <a href="https://your-paper-link.pdf" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>Paper</span>
-                </a>
-              </span>
-
-              <!-- TechRxiv -->
-              <span class="link-block">
-                <a href="https://www.techrxiv.org/your-paper-link" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="ai ai-open-access"></i></span>
-                  <span>TechRxiv</span>
-                </a>
-              </span>
-
-              <!-- Presentation Video -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=your-presentation-video" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-youtube"></i></span>
-                  <span>Presentation Video</span>
-                </a>
-              </span>
-            </div>
-          </div>
-
-        </div>
+      <div class="is-size-5 publication-authors">
+        <span class="author-block"><a href="#">Negar Pouya</a>,</span>
+        <span class="author-block"><a href="#">Armin Soleymani</a>,</span>
+        <span class="author-block"><a href="#">Gholamreza Moradi</a>,</span>
+        <span class="author-block"><a href="#">Farzaneh Abdollahi</a></span>
       </div>
+
+      <div class="is-size-6 publication-authors" style="margin-top:.5rem;">
+        <span class="author-block">Amirkabir University of Technology (Tehran Polytechnic)</span>
+      </div>
+
+      <div class="publication-links" style="margin-top:1rem;">
+        <a href="https://your-paper-link.pdf" class="button is-dark is-rounded"><i class="fas fa-file-pdf"></i>&nbsp; Paper</a>
+        <a href="https://www.techrxiv.org/your-paper-link" class="button is-dark is-rounded"><i class="ai ai-open-access"></i>&nbsp; TechRxiv</a>
+        <a href="https://www.youtube.com/watch?v=your-presentation-video" class="button is-dark is-rounded"><i class="fab fa-youtube"></i>&nbsp; Presentation Video</a>      
+      </div>
+      <p class="has-text-centered" style="margin-top: 1.5rem; font-weight: 700; font-size: 1.2rem;">
+         Accepted by <span style="color:#004aad;">IEEE IKT 2025</span>
+      </p> 
     </div>
   </div>
 </section>
 
-<!-- Single large centered teaser video (kept) -->
+<!-- TEASER -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline style="width:100%;max-width:980px;display:block;margin:0 auto;border-radius:12px;">
-        <source src="./static/videos/teaser.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered" style="margin-top:12px;">
-        <span class="dnerf">FiReT</span> reconstructs wireless radiation fields and optimizes transmitter placement from sparse measurements.
-      </h2>
-    </div>
+    <video autoplay muted loop playsinline style="width:100%;max-width:980px;margin:0 auto;border-radius:12px;">
+      <source src="./static/videos/teaser.mp4" type="video/mp4">
+    </video>
+    <h2 class="subtitle has-text-centered" style="margin-top:12px;">
+      <span class="dnerf">FiReT</span> reconstructs wireless radiation fields and optimizes transmitter placement from sparse measurements.
+    </h2>
   </div>
 </section>
 
-<!-- Removed: the whole carousel/extra videos section -->
-
+<!-- ABSTRACT -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We introduce <strong>FiReT</strong>, a deep learning framework designed for wireless channel estimation and transmitter placement optimization. Accurately modeling channel behavior in complex indoor spaces remains a critical challenge, as conventional approaches rely on exhaustive site surveys that demand dense measurements and significant human effort.
-          </p>
-          <p>
-            To overcome these limitations, our method leverages recent advances in <strong>Neural Radiance Fields (NeRF)</strong> to learn a continuous representation of the wireless radiation field from sparse observations. In our formulation, receivers are randomly positioned throughout the environment while the transmitter location is systematically varied, allowing the model to explore alternative deployment scenarios.
-          </p>
-          <p>
-            This design enables the estimation of wireless channels at unseen points and facilitates the identification of the globally optimal transmitter position that ensures robust coverage across the entire space. Through extensive evaluation, we show that our approach maintains high prediction accuracy with far fewer measurements than traditional methods, demonstrating the promise of NeRF-based learning in guiding efficient and scalable transmitter deployment for future wireless networks.
-          </p>
-        </div>
-      </div>
+    <div class="has-text-centered">
+      <h2 class="title is-3">Abstract</h2>
     </div>
-    <!--/ Abstract -->
+    <div class="content has-text-justified">
+      <p>We introduce <strong>FiReT</strong>, a deep learning framework designed for wireless channel estimation and transmitter placement optimization...</p>
+    </div>
   </div>
 </section>
 
-<!-- ===================================== -->
-<!-- 1) Model Architecture (VERTICAL LAYOUT) -->
-<!-- ===================================== -->
+<!-- PRESENTATION VIDEO -->
+<section class="section" id="presentation-video">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Presentation Video</h2>
+    <p class="has-text-grey">Watch our full project presentation below.</p>
+    <!-- Replace the link below with your video -->
+    <div style="margin-top: 1rem;">
+      <iframe width="800" height="450"
+              src="https://www.youtube.com/embed/your-video-id"
+              title="FiReT Presentation Video"
+              frameborder="0"
+              allowfullscreen
+              style="max-width:100%;border-radius:12px;">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- MODEL ARCHITECTURE -->
 <section class="section" id="model-architecture">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Model Architecture</h2>
-    <div class="content has-text-justified" style="margin-bottom: 1rem;">
-      <p>
-        We present the FiReT pipeline and its core Residual-FiLM MLP that conditions on DoA across layers
-        to preserve angular sensitivity. Replace the images below with your actual architecture figures and adjust the captions accordingly.
-      </p>
-    </div>
 
-    <div class="content has-text-centered">
-      <!-- Architecture overview -->
-      <figure style="margin-bottom: 2rem;">
-        <img src="./static/images/architecture_overview.png"
-             alt="FiReT pipeline overview"
-             style="max-width: 80%; border:1px solid #222; border-radius:12px;">
-        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
-          FiReT learns a continuous wireless radiation field from sparse receiver measurements,
-          supporting dense channel queries and transmitter ranking.
-        </p>
-      </figure>
+    <figure style="margin-bottom:2rem;text-align:center;">
+      <img src="./static/images/architecture_overview.png" style="max-width:80%;border:1px solid #222;border-radius:12px;">
+      <figcaption>FiReT learns a continuous wireless radiation field from sparse receiver measurements, supporting dense channel queries and transmitter ranking.</figcaption>
+    </figure>
 
-      <!-- FiLM MLP block -->
-      <figure style="margin-bottom: 2rem;">
-        <img src="./static/images/architecture_filmlp.png"
-             alt="Residual-FiLM MLP with DoA conditioning"
-             style="max-width: 70%; border:1px solid #222; border-radius:12px;">
-        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
-          Residual-FiLM MLP injects DoA information across all layers via per-channel scaling and shifting
-          to preserve angular sensitivity and stabilize training.
-        </p>
-      </figure>
-    </div>
+    <figure style="margin-bottom:2rem;text-align:center;">
+      <img src="./static/images/architecture_filmlp.png" style="max-width:70%;border:1px solid #222;border-radius:12px;">
+      <figcaption>Residual-FiLM MLP injects DoA information across all layers via per-channel scaling and shifting to preserve angular sensitivity and stabilize training.</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ====================================================== -->
-<!-- 2) Channel Estimation & Transmitter Placement Results  -->
-<!-- ====================================================== -->
+<!-- RESULTS -->
 <section class="section" id="results">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Channel Estimation & Transmitter Placement Results</h2>
-    <div class="content has-text-justified" style="margin-bottom: 1rem;">
-      <p>
-        We report channel estimation accuracy and transmitter ranking quality across complex indoor layouts.
-        Replace the charts below with your own figures and update the captions.
-      </p>
-    </div>
 
-    <div class="content has-text-centered">
-      <!-- Chart 1 -->
-      <figure style="margin-bottom: 2rem;">
-        <img src="./static/images/chart_cfr_accuracy.png"
-             alt="CFR estimation accuracy across validation points"
-             style="max-width: 70%; border:1px solid #222; border-radius:12px;">
-        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
-          FiReT achieves higher channel estimation accuracy with sparse samples compared to NeWRF and MLP baselines,
-          reflecting effective NeRF-based field modeling.
-        </p>
-      </figure>
+    <figure style="margin-bottom:2rem;text-align:center;">
+      <img src="./static/images/chart_cfr_accuracy.png" style="max-width:70%;border:1px solid #222;border-radius:12px;">
+      <figcaption>FiReT achieves higher channel estimation accuracy with sparse samples compared to NeWRF and MLP baselines, reflecting effective NeRF-based field modeling.</figcaption>
+    </figure>
 
-      <!-- Chart 2 (Table) -->
-      <figure style="margin-bottom: 2rem;">
-        <img src="./static/images/chart_tx_ranking.png"
-             alt="Transmitter placement ranking table"
-             style="max-width: 75%; border:1px solid #222; border-radius:12px;">
-        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
-          Transmitter candidate ranking in the Bedroom scene.
-          Candidates are placed on a (x, y, z) grid.
-          “Average CFR |H|” is the mean CFR magnitude over all receivers and operating frequencies (unitless).
-          “Ray Count” is the number of contributing propagation paths among all receivers after attenuation and phase screening.
-        </p>
-        <p class="has-text-justified" style="max-width: 80%; margin: 1rem auto;">
-          FiReT’s transmitter ranking balances link strength and spatial coverage
-          using a weighted combination of CFR and ray-count metrics.
-        </p>
-      </figure>
-    </div>
+    <figure style="margin-bottom:2rem;text-align:center;">
+      <img src="./static/images/chart_tx_ranking.png" style="max-width:75%;border:1px solid #222;border-radius:12px;">
+      <figcaption>
+        Transmitter candidate ranking in the Bedroom scene. Candidates are placed on a (x, y, z) grid.
+        “Average CFR |H|” is the mean CFR magnitude over all receivers and operating frequencies (unitless).
+        “Ray Count” is the number of contributing propagation paths among all receivers after attenuation and phase screening.
+        FiReT’s transmitter ranking balances link strength and spatial coverage using a weighted combination of CFR and ray-count metrics.
+      </figcaption>
+    </figure>
   </div>
 </section>
 
-
-<!-- BibTeX -->
+<!-- BIBTEX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -257,33 +185,13 @@
 </section>
 
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link" href="./static/paper/firet_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/NgrPu" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-              Creative Commons Attribution-ShareAlike 4.0 International License
-            </a>.
-          </p>
-          <p>
-            Source code adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies.github.io</a>.
-            Please remove or replace the analytics code in the header if you don't need it.
-          </p>
-        </div>
-      </div>
-    </div>
+  <div class="container has-text-centered">
+    <a class="icon-link" href="./static/paper/firet_paper.pdf"><i class="fas fa-file-pdf"></i></a>
+    <a class="icon-link" href="https://github.com/NgrPu" target="_blank"><i class="fab fa-github"></i></a>
+    <p style="margin-top:10px;font-size:0.85rem;color:#666;">
+      Licensed under Creative Commons BY-SA 4.0. Adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies.github.io</a>.
+    </p>
   </div>
 </footer>
-
 </body>
 </html>
